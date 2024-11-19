@@ -6,7 +6,6 @@ import { getPosts } from './getUser';
 
 const Posts = () => {
   const { data } = useQuery({ queryKey: ['poosts'], queryFn: getPosts });
-
   const clientValue = useQuery({ queryKey: ['posts'], queryFn: getPosts });
 
   return (
